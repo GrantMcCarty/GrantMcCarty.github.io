@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['read_5fdocument_0',['read_document',['../namespacefiles_1_1document__processing.html#ab67b007d7829c8d0eaaeb10d2ecf4bb1',1,'files::document_processing']]],
+  ['remove_5freport_1',['remove_report',['../classdatabase_1_1repo_1_1_report_repo.html#af483b6a0ae1cdab88658c11bf3ff1973',1,'database::repo::ReportRepo']]],
+  ['remove_5frole_2',['remove_role',['../namespaceusers_1_1users.html#ada3b4d7e28c0f20835ea50bee51f6018',1,'users::users']]],
+  ['remove_5fuser_5frole_3',['remove_user_role',['../classdatabase_1_1repo_1_1_auth0_web_api.html#a80d6dc974c6e2d4cccc6658b2cb39d5f',1,'database::repo::Auth0WebApi']]],
+  ['repo_2epy_4',['repo.py',['../repo_8py.html',1,'']]],
+  ['report_5',['Report',['../classmodels_1_1model_1_1_report.html',1,'models::model']]],
+  ['report_6',['report',['../namespacefiles_1_1process.html#a29cc71470fe787b3341e5bbf48661284',1,'files::process']]],
+  ['report_5fid_7',['report_id',['../classmodels_1_1model_1_1_s_l_o.html#afa44abfa6a7fb48d789dc11e61c8a0bf',1,'models.model.SLO.report_id()'],['../classmodels_1_1model_1_1_audit_log.html#a7c8422bb0afc0af021fbe8586cb1ca3b',1,'models.model.AuditLog.report_id()']]],
+  ['report_5fmatcher_8',['report_matcher',['../namespacefiles_1_1document__processing.html#ab69ff1dedb55cad370b04b52bdd53213',1,'files::document_processing']]],
+  ['reportrepo_9',['ReportRepo',['../classdatabase_1_1repo_1_1_report_repo.html',1,'database::repo']]],
+  ['reports_10',['reports',['../namespacereports.html',1,'reports'],['../namespacereports_1_1reports.html',1,'reports.reports']]],
+  ['reports_2epy_11',['reports.py',['../reports_8py.html',1,'']]],
+  ['reports_5fbp_12',['reports_bp',['../namespacereports_1_1reports.html#aff043785c10ea9969257914f9bc9ae63',1,'reports::reports']]],
+  ['repository_13',['Repository',['../classdatabase_1_1repo_1_1_repository.html',1,'database::repo']]],
+  ['requires_5fauth_14',['requires_auth',['../namespaceauth.html#a42f6fe067c60286cd0fb7b023dc1b62f',1,'auth']]],
+  ['requires_5fscope_15',['requires_scope',['../namespaceauth.html#a030b84d23093b231b24d9ce09e7e1d64',1,'auth']]],
+  ['retrieve_5fdata_16',['retrieve_data',['../namespacereports_1_1reports.html#a69be5d3109c36bae0375c41c01b0046d',1,'reports::reports']]]
+];

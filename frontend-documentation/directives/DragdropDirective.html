@@ -56,7 +56,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/dragdrop.directive.ts</code>
+            <code>src/app/shared/services/dragdrop.directive.ts</code>
         </p>
 
 
@@ -157,7 +157,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/dragdrop.directive.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/shared/services/dragdrop.directive.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -184,7 +184,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/dragdrop.directive.ts:8</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/shared/services/dragdrop.directive.ts:8</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -215,7 +215,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="17"
-                            class="link-to-prism">src/app/dragdrop.directive.ts:17</a></div>
+                            class="link-to-prism">src/app/shared/services/dragdrop.directive.ts:17</a></div>
                 </td>
             </tr>
 
@@ -245,7 +245,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/dragdrop.directive.ts:12</a></div>
+                            class="link-to-prism">src/app/shared/services/dragdrop.directive.ts:12</a></div>
                 </td>
             </tr>
 
@@ -274,12 +274,46 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="22"
-                            class="link-to-prism">src/app/dragdrop.directive.ts:22</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/shared/services/dragdrop.directive.ts:29</a></div>
                 </td>
             </tr>
 
 
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the event to look at for dropped files into the dropbox</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
         </tbody>
     </table>
 </section>
@@ -316,7 +350,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="17"
-                            class="link-to-prism">src/app/dragdrop.directive.ts:17</a></div>
+                            class="link-to-prism">src/app/shared/services/dragdrop.directive.ts:17</a></div>
                 </td>
             </tr>
 
@@ -391,7 +425,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/dragdrop.directive.ts:12</a></div>
+                            class="link-to-prism">src/app/shared/services/dragdrop.directive.ts:12</a></div>
                 </td>
             </tr>
 
@@ -467,8 +501,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="22"
-                            class="link-to-prism">src/app/dragdrop.directive.ts:22</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/shared/services/dragdrop.directive.ts:29</a></div>
                 </td>
             </tr>
 
@@ -484,6 +518,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -498,6 +533,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>the event to look at for dropped files into the dropbox</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -543,6 +582,13 @@ export class DragdropDirective {
     event.stopPropagation();
   }
 
+  /**
+   * @ngdoc method
+   * @name onDrop 
+   * @description logs out the current user
+   * @param {any} event the event to look at for dropped files into the dropbox
+   * @returns {void}
+   */
   @HostListener(&#x27;drop&#x27;, [&#x27;$event&#x27;]) public onDrop(event: any) {
     event.preventDefault();
     event.stopPropagation();

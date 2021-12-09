@@ -1,4 +1,23 @@
 var searchData=
 [
-  ['get_5ffiles_0',['get_files',['../namespacefiles_1_1files.html#a0b81f5034b14959b9f46c91160bd94c4',1,'files::files']]]
+  ['dashboard_5fbp_0',['dashboard_bp',['../namespacefiles_1_1files.html#a0c0f623d5830246bb95a030381390e43',1,'files::files']]],
+  ['data_1',['data',['../namespacefiles_1_1process.html#a9221953707a22c894b48a76c7bfa4751',1,'files::process']]],
+  ['data_5fcollection_2',['data_collection',['../classmodels_1_1model_1_1_methods.html#a2a5a573b7d891fb69b5183dea23a7c5f',1,'models::model::Methods']]],
+  ['data_5fcollection_5fdate_5frange_3',['data_collection_date_range',['../classmodels_1_1model_1_1_collection_analysis.html#a1bbc140a2f558f48719ad9e23c054bfd',1,'models::model::CollectionAnalysis']]],
+  ['database_4',['database',['../namespacedatabase.html',1,'']]],
+  ['date_5frange_5',['date_range',['../classmodels_1_1model_1_1_report.html#a115c347c14a18c0fc3c8a4af69fbb8d7',1,'models::model::Report']]],
+  ['db_5finit_6',['db_init',['../namespacedatabase_1_1driver.html#a15b10ee7bd941c6d8dcf511b2861d9b7',1,'database::driver']]],
+  ['decisions_7',['decisions',['../namespacefiles_1_1process.html#a104903431e8cd2aa07e0ad75d1903e08',1,'files::process']]],
+  ['decisionsaction_8',['DecisionsAction',['../classmodels_1_1model_1_1_decisions_action.html',1,'models::model']]],
+  ['decisionsactionsrepo_9',['DecisionsActionsRepo',['../classdatabase_1_1repo_1_1_decisions_actions_repo.html',1,'database::repo']]],
+  ['default_5fconnection_10',['default_connection',['../namespacedatabase_1_1driver.html#a06f8f59f5a9f3b68ebbffb0c3441c385',1,'database::driver']]],
+  ['degree_5flevel_11',['degree_level',['../classmodels_1_1model_1_1_report.html#a8c1761ab9114cbd1f97653de2675eeed',1,'models::model::Report']]],
+  ['delete_12',['delete',['../classdatabase_1_1repo_1_1_repository.html#ae2ba4e4f7972f7fbf2aabc80f7a9e62b',1,'database::repo::Repository']]],
+  ['department_13',['department',['../classmodels_1_1model_1_1_report.html#ad35773c281849faea2307c72efa559c0',1,'models::model::Report']]],
+  ['description_14',['description',['../classmodels_1_1model_1_1_s_l_o.html#a820cf443ed4abd9bb590c4d546b368fd',1,'models.model.SLO.description()'],['../classmodels_1_1model_1_1_measure.html#a4e2021ad044986d3ff6157bb9fee8af8',1,'models.model.Measure.description()']]],
+  ['document_5fprocessing_2epy_15',['document_processing.py',['../document__processing_8py.html',1,'']]],
+  ['domain_16',['domain',['../classmodels_1_1model_1_1_measure.html#a69bb20033251ab1967e81df5165cbfc5',1,'models.model.Measure.domain()'],['../classmodels_1_1model_1_1_methods.html#ae313435a1705c726e982f2c776982a1f',1,'models.model.Methods.domain()']]],
+  ['driver_17',['driver',['../namespacedatabase_1_1driver.html',1,'database.driver'],['../classdatabase_1_1repo_1_1_repository.html#aa646d2d2692d363358c72d72be03fe2d',1,'database.repo.Repository.driver()']]],
+  ['driver_2epy_18',['driver.py',['../driver_8py.html',1,'']]],
+  ['repo_19',['repo',['../namespacedatabase_1_1repo.html',1,'database']]]
 ];

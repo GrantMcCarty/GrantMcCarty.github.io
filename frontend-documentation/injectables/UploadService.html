@@ -57,7 +57,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/upload-service.ts</code>
+            <code>src/app/shared/services/upload-service.ts</code>
         </p>
 
 
@@ -103,7 +103,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/upload-service.ts:6</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/shared/services/upload-service.ts:6</a></div>
                             </td>
                         </tr>
 
@@ -166,8 +166,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="10"
-                            class="link-to-prism">src/app/upload-service.ts:10</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app/shared/services/upload-service.ts:16</a></div>
                 </td>
             </tr>
 
@@ -220,7 +220,8 @@
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>http response from the backend</p>
+
                     </div>
                 </td>
             </tr>
@@ -241,12 +242,23 @@ export class UploadService {
 
   constructor(private http: HttpClient) { }
 
+  /**
+   * @ngdoc method
+   * @name uploadFile 
+   * @description uploads files to the backend
+   * @returns {Observable&lt;any&gt;} http response from the backend
+   */
   uploadFile(url: string, files: File[]): Observable&lt;any&gt; {
     let formData &#x3D; new FormData();
     for(let x &#x3D; 0; x &lt; files.length; x++)
       formData.append(&#x27;file&#x27;, files[x]);
 
-    return this.http.post(url, formData, {responseType: &#x27;text&#x27;});
+    return this.http.post(url, formData, {
+      responseType: &#x27;text&#x27;,
+      headers: {
+        &#x27;Authorization&#x27;: &#x27;Bearer &#x27; + localStorage.getItem(&#x27;token&#x27;)
+      }
+    });
   }
 }</code></pre>
     </div>

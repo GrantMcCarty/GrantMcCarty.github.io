@@ -1,0 +1,121 @@
+\hypertarget{classdatabase_1_1repo_1_1_auth0_web_api}{}\doxysection{database.\+repo.\+Auth0\+Web\+Api Class Reference}
+\label{classdatabase_1_1repo_1_1_auth0_web_api}\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_ac1f80b6032e5c3047e8fcf718e67cafc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_ab16aba01416f8e6cbeedacfce31f79e0}{token}}, str \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_aceb50da549d8af0c5c8c725f1f9cb61f}{base\+\_\+url}})
+\item 
+dict \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_ad4d6cb84b168f17b883f23cf2bd85862}{get\+\_\+user\+\_\+info}} (self, str uid)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_af67c8b103ac7c7c50e63588001942221}{get\+\_\+user\+\_\+name}} (self, str uid)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_a5e4ede7b671a681f42e4653efaabe7d4}{get\+\_\+user\+\_\+roles}} (self, str uid)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_a03e9410aba5395bdb4ae76ade733ab64}{user\+\_\+has\+\_\+role}} (self, str uid, str role\+\_\+name, str role\+\_\+id)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_a80d6dc974c6e2d4cccc6658b2cb39d5f}{remove\+\_\+user\+\_\+role}} (self, str uid, str role)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_a552c2d1747f500d1b1e1a47e226167ad}{add\+\_\+user\+\_\+role}} (self, str uid, str role)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_a4be7309fd9df1f5eb0ec838864661e7a}{get\+\_\+users}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_aceb50da549d8af0c5c8c725f1f9cb61f}{base\+\_\+url}}
+\item 
+\mbox{\hyperlink{classdatabase_1_1repo_1_1_auth0_web_api_ab16aba01416f8e6cbeedacfce31f79e0}{token}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_ac1f80b6032e5c3047e8fcf718e67cafc}\label{classdatabase_1_1repo_1_1_auth0_web_api_ac1f80b6032e5c3047e8fcf718e67cafc}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def database.\+repo.\+Auth0\+Web\+Api.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{token,  }\item[{str}]{base\+\_\+url }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_a552c2d1747f500d1b1e1a47e226167ad}\label{classdatabase_1_1repo_1_1_auth0_web_api_a552c2d1747f500d1b1e1a47e226167ad}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!add\_user\_role@{add\_user\_role}}
+\index{add\_user\_role@{add\_user\_role}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{add\_user\_role()}{add\_user\_role()}}
+{\footnotesize\ttfamily def database.\+repo.\+Auth0\+Web\+Api.\+add\+\_\+user\+\_\+role (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{uid,  }\item[{str}]{role }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a role to the user with the provided uid. Note this is not the name
+of the role, it is the role ID which can be found in the Auth0 console.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_ad4d6cb84b168f17b883f23cf2bd85862}\label{classdatabase_1_1repo_1_1_auth0_web_api_ad4d6cb84b168f17b883f23cf2bd85862}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!get\_user\_info@{get\_user\_info}}
+\index{get\_user\_info@{get\_user\_info}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{get\_user\_info()}{get\_user\_info()}}
+{\footnotesize\ttfamily  dict database.\+repo.\+Auth0\+Web\+Api.\+get\+\_\+user\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{uid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a dictionary of the user's information.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_af67c8b103ac7c7c50e63588001942221}\label{classdatabase_1_1repo_1_1_auth0_web_api_af67c8b103ac7c7c50e63588001942221}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!get\_user\_name@{get\_user\_name}}
+\index{get\_user\_name@{get\_user\_name}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{get\_user\_name()}{get\_user\_name()}}
+{\footnotesize\ttfamily def database.\+repo.\+Auth0\+Web\+Api.\+get\+\_\+user\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{uid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the user's name. If it fails to get their name, uses their email.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_a5e4ede7b671a681f42e4653efaabe7d4}\label{classdatabase_1_1repo_1_1_auth0_web_api_a5e4ede7b671a681f42e4653efaabe7d4}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!get\_user\_roles@{get\_user\_roles}}
+\index{get\_user\_roles@{get\_user\_roles}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{get\_user\_roles()}{get\_user\_roles()}}
+{\footnotesize\ttfamily def database.\+repo.\+Auth0\+Web\+Api.\+get\+\_\+user\+\_\+roles (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{uid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of the user's roles.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_a4be7309fd9df1f5eb0ec838864661e7a}\label{classdatabase_1_1repo_1_1_auth0_web_api_a4be7309fd9df1f5eb0ec838864661e7a}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!get\_users@{get\_users}}
+\index{get\_users@{get\_users}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{get\_users()}{get\_users()}}
+{\footnotesize\ttfamily def database.\+repo.\+Auth0\+Web\+Api.\+get\+\_\+users (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of all users.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_a80d6dc974c6e2d4cccc6658b2cb39d5f}\label{classdatabase_1_1repo_1_1_auth0_web_api_a80d6dc974c6e2d4cccc6658b2cb39d5f}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!remove\_user\_role@{remove\_user\_role}}
+\index{remove\_user\_role@{remove\_user\_role}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{remove\_user\_role()}{remove\_user\_role()}}
+{\footnotesize\ttfamily def database.\+repo.\+Auth0\+Web\+Api.\+remove\+\_\+user\+\_\+role (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{uid,  }\item[{str}]{role }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Removes a role from the user with the provided uid. Note: this is not
+the name of the role, it is the role ID which can be found in the Auth0
+console.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_a03e9410aba5395bdb4ae76ade733ab64}\label{classdatabase_1_1repo_1_1_auth0_web_api_a03e9410aba5395bdb4ae76ade733ab64}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!user\_has\_role@{user\_has\_role}}
+\index{user\_has\_role@{user\_has\_role}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{user\_has\_role()}{user\_has\_role()}}
+{\footnotesize\ttfamily def database.\+repo.\+Auth0\+Web\+Api.\+user\+\_\+has\+\_\+role (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{uid,  }\item[{str}]{role\+\_\+name,  }\item[{str}]{role\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the user has the specified role. 
+Will return true if a role has the name provided in the
+role parameter OR if the role_id matches the role_id provided.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_aceb50da549d8af0c5c8c725f1f9cb61f}\label{classdatabase_1_1repo_1_1_auth0_web_api_aceb50da549d8af0c5c8c725f1f9cb61f}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!base\_url@{base\_url}}
+\index{base\_url@{base\_url}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{base\_url}{base\_url}}
+{\footnotesize\ttfamily database.\+repo.\+Auth0\+Web\+Api.\+base\+\_\+url}
+
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_auth0_web_api_ab16aba01416f8e6cbeedacfce31f79e0}\label{classdatabase_1_1repo_1_1_auth0_web_api_ab16aba01416f8e6cbeedacfce31f79e0}} 
+\index{database.repo.Auth0WebApi@{database.repo.Auth0WebApi}!token@{token}}
+\index{token@{token}!database.repo.Auth0WebApi@{database.repo.Auth0WebApi}}
+\doxysubsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily database.\+repo.\+Auth0\+Web\+Api.\+token}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+webapi/database/\mbox{\hyperlink{repo_8py}{repo.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{classdatabase_1_1driver_1_1_a_a_c_database_driver}{}\doxysection{database.\+driver.\+AACDatabase\+Driver Class Reference}
+\label{classdatabase_1_1driver_1_1_a_a_c_database_driver}\index{database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver_ab4595ddea4cfdb7e2376dfc417201675}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, connection, \mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver_a886842e0dd1ae3c96dc1a018ab462ee5}{cursor\+\_\+type}}=psycopg2.\+extras.\+Dict\+Cursor)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver_aebc1b3140457f1fd93ee5213e1051aa3}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver_abfbcd0503acea734c2603f08b75c084a}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type, value, traceback)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver_a2acdd22ae778bcf5bad95305a8c4cbd5}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver_aea2505782718c004931f09b1c66f3310}{conn}}
+\item 
+\mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver_a886842e0dd1ae3c96dc1a018ab462ee5}{cursor\+\_\+type}}
+\item 
+\mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver_aa07dadab699e87edca46174eedfd6583}{current\+\_\+cursor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}AACDatabaseDriver is a helper class for getting a connection
+and cursor to the database. AACDatabaseDriver is a context manager
+and will close the cursor when it is done.
+
+usage:
+```
+with AACDatabaseDriver() as (conn, cursor):
+  cursor.execute(query)
+  result = cursor.fetchall()
+```
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdatabase_1_1driver_1_1_a_a_c_database_driver_ab4595ddea4cfdb7e2376dfc417201675}\label{classdatabase_1_1driver_1_1_a_a_c_database_driver_ab4595ddea4cfdb7e2376dfc417201675}} 
+\index{database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def database.\+driver.\+AACDatabase\+Driver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{connection,  }\item[{}]{cursor\+\_\+type = {\ttfamily psycopg2.extras.DictCursor} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the AACDatabaseDriver using the given connection
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1driver_1_1_a_a_c_database_driver_a2acdd22ae778bcf5bad95305a8c4cbd5}\label{classdatabase_1_1driver_1_1_a_a_c_database_driver_a2acdd22ae778bcf5bad95305a8c4cbd5}} 
+\index{database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily def database.\+driver.\+AACDatabase\+Driver.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Will be run when the garbage collector runs. Need to close 
+the connection to the database.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdatabase_1_1driver_1_1_a_a_c_database_driver_aebc1b3140457f1fd93ee5213e1051aa3}\label{classdatabase_1_1driver_1_1_a_a_c_database_driver_aebc1b3140457f1fd93ee5213e1051aa3}} 
+\index{database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily def database.\+driver.\+AACDatabase\+Driver.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets up the context. Will return a tuple of the connection and cursor.
+
+Dont forget to call `conn.commit()` if you want your changes to be saved 
+to the DB. `conn.rollback()` will undo your changes.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1driver_1_1_a_a_c_database_driver_abfbcd0503acea734c2603f08b75c084a}\label{classdatabase_1_1driver_1_1_a_a_c_database_driver_abfbcd0503acea734c2603f08b75c084a}} 
+\index{database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily def database.\+driver.\+AACDatabase\+Driver.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{type,  }\item[{}]{value,  }\item[{}]{traceback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function for cleaning up the context. Will close the cursor.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classdatabase_1_1driver_1_1_a_a_c_database_driver_aea2505782718c004931f09b1c66f3310}\label{classdatabase_1_1driver_1_1_a_a_c_database_driver_aea2505782718c004931f09b1c66f3310}} 
+\index{database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}!conn@{conn}}
+\index{conn@{conn}!database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}}
+\doxysubsubsection{\texorpdfstring{conn}{conn}}
+{\footnotesize\ttfamily database.\+driver.\+AACDatabase\+Driver.\+conn}
+
+\mbox{\Hypertarget{classdatabase_1_1driver_1_1_a_a_c_database_driver_aa07dadab699e87edca46174eedfd6583}\label{classdatabase_1_1driver_1_1_a_a_c_database_driver_aa07dadab699e87edca46174eedfd6583}} 
+\index{database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}!current\_cursor@{current\_cursor}}
+\index{current\_cursor@{current\_cursor}!database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}}
+\doxysubsubsection{\texorpdfstring{current\_cursor}{current\_cursor}}
+{\footnotesize\ttfamily database.\+driver.\+AACDatabase\+Driver.\+current\+\_\+cursor}
+
+\mbox{\Hypertarget{classdatabase_1_1driver_1_1_a_a_c_database_driver_a886842e0dd1ae3c96dc1a018ab462ee5}\label{classdatabase_1_1driver_1_1_a_a_c_database_driver_a886842e0dd1ae3c96dc1a018ab462ee5}} 
+\index{database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}!cursor\_type@{cursor\_type}}
+\index{cursor\_type@{cursor\_type}!database.driver.AACDatabaseDriver@{database.driver.AACDatabaseDriver}}
+\doxysubsubsection{\texorpdfstring{cursor\_type}{cursor\_type}}
+{\footnotesize\ttfamily database.\+driver.\+AACDatabase\+Driver.\+cursor\+\_\+type}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+webapi/database/\mbox{\hyperlink{driver_8py}{driver.\+py}}\end{DoxyCompactItemize}

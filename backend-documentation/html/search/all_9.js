@@ -1,8 +1,16 @@
 var searchData=
 [
-  ['target_5ffolder_0',['TARGET_FOLDER',['../namespaceapp.html#afff35435bcaba98a126915006b14cae8',1,'app']]],
-  ['test_5fparse_5fxml_1',['test_parse_xml',['../namespacetests_1_1tests.html#ab55322a0acf1a5b4a42b368e12acf76e',1,'tests::tests']]],
-  ['tests_2',['tests',['../namespacetests.html',1,'tests'],['../namespacetests_1_1tests.html',1,'tests.tests']]],
-  ['tests_2epy_3',['tests.py',['../tests_8py.html',1,'']]],
-  ['trigger_5fprocess_5ffiles_4',['trigger_process_files',['../namespacereports_1_1reports.html#ae2e40a80996766e506dce4739ff162d1',1,'reports::reports']]]
+  ['id_0',['id',['../classmodels_1_1model_1_1_report.html#a65afa5d360464c8ed91f127d3fa539c9',1,'models.model.Report.id()'],['../classmodels_1_1model_1_1_s_l_o.html#a017859744e758e7cd4f65992fe361513',1,'models.model.SLO.id()'],['../classmodels_1_1model_1_1_measure.html#acd98cb88c964c64b602bc9f05ab5ffc4',1,'models.model.Measure.id()'],['../classmodels_1_1model_1_1_decisions_action.html#acd04a7c58ee3dba7d5e89b5c7f4f8f59',1,'models.model.DecisionsAction.id()'],['../classmodels_1_1model_1_1_collection_analysis.html#a24c51c81273e6aa536c4800de0ad0927',1,'models.model.CollectionAnalysis.id()'],['../classmodels_1_1model_1_1_methods.html#a0c3fc6ce1f94f77fa9713dc5a7280a5f',1,'models.model.Methods.id()'],['../classmodels_1_1model_1_1_accredited_data_analysis.html#a77d204616066fd54925bac55dd358326',1,'models.model.AccreditedDataAnalysis.id()']]],
+  ['idx_1',['idx',['../namespacefiles_1_1process.html#a5a68db8097c108f0cef4d8c134e67878',1,'files::process']]],
+  ['init_5ffrom_5fdict_2',['init_from_dict',['../classmodels_1_1model_1_1_base_model.html#afea4448d900e5e750efcdd27415a7617',1,'models::model::BaseModel']]],
+  ['insert_3',['insert',['../classdatabase_1_1repo_1_1_report_repo.html#ad79e35d922dd32a6e9f1b28745b1bf2b',1,'database.repo.ReportRepo.insert()'],['../classdatabase_1_1repo_1_1_s_l_o_repo.html#a0191e1be7a1eb6c0128672513d68fbbd',1,'database.repo.SLORepo.insert()'],['../classdatabase_1_1repo_1_1_measure_repo.html#a7829a1211295b523ddbfc3901310ed6a',1,'database.repo.MeasureRepo.insert()'],['../classdatabase_1_1repo_1_1_decisions_actions_repo.html#a36cf07bebe05f8e6c988c01db3ac4d3d',1,'database.repo.DecisionsActionsRepo.insert()'],['../classdatabase_1_1repo_1_1_collection_analysis_repo.html#a386418b86defd98d2120b12e9f69333c',1,'database.repo.CollectionAnalysisRepo.insert()'],['../classdatabase_1_1repo_1_1_methods_repo.html#a7aee4f989aa5db46fc18589b5b4ba62c',1,'database.repo.MethodsRepo.insert()'],['../classdatabase_1_1repo_1_1_accredited_data_analysis_repo.html#a2e1e42ab1f475864ec781206ba3e9318',1,'database.repo.AccreditedDataAnalysisRepo.insert()'],['../classdatabase_1_1repo_1_1_audit_log_repo.html#af35f74f4fed5712054fa75c813a1e965',1,'database.repo.AuditLogRepo.insert()']]],
+  ['is_5facc_5fdata_5fanalysis_4',['is_acc_data_analysis',['../namespacefiles_1_1document__processing.html#a01436dd96130bd7d530b0fd130d5acf5',1,'files::document_processing']]],
+  ['is_5fallowed_5fext_5',['is_allowed_ext',['../namespacefiles_1_1files.html#a360a7a086c62d2d988a70b42042f638f',1,'files::files']]],
+  ['is_5fanalysis_6',['is_analysis',['../namespacefiles_1_1document__processing.html#aaaa62ba27e7dd5b9b954ec06019e3205',1,'files::document_processing']]],
+  ['is_5fcheckbox_7',['is_checkbox',['../namespacefiles_1_1document__processing.html#a4ee54429931eacc5eba396eb7236213c',1,'files::document_processing']]],
+  ['is_5ffull_8',['is_full',['../namespacefiles_1_1document__processing.html#a2ca52c35426c2cd4c5410db9c6f690c0',1,'files::document_processing']]],
+  ['is_5fmethods_9',['is_methods',['../namespacefiles_1_1document__processing.html#a0eea92d17fcf498049e86c7f2bc6b79e',1,'files::document_processing']]],
+  ['is_5fmethods_5fheader_10',['is_methods_header',['../namespacefiles_1_1document__processing.html#a41ede91d1fa9c305b873d63f0de592ee',1,'files::document_processing']]],
+  ['is_5fyear_11',['is_year',['../namespacefiles_1_1document__processing.html#a5afb3c2131309408c477fdc7e45187e0',1,'files::document_processing']]],
+  ['iter_5funique_5fcells_12',['iter_unique_cells',['../namespacefiles_1_1document__processing.html#a816092e734ca5aecf734be31896709b0',1,'files::document_processing']]]
 ];

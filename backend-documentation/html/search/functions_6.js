@@ -1,4 +1,26 @@
 var searchData=
 [
-  ['upload_5ffile_0',['upload_file',['../namespacefiles_1_1files.html#a4e1801db62c5fd7e9555e5978272ec62',1,'files::files']]]
+  ['get_5facc_5fdata_5fanalysis_0',['get_acc_data_analysis',['../namespacefiles_1_1document__processing.html#a6f1cfcbecf274e847f3ca4749eac56b6',1,'files::document_processing']]],
+  ['get_5fanalysis_5fdata_1',['get_analysis_data',['../namespacefiles_1_1document__processing.html#a8fda716f500c5adede27d2483ff64549',1,'files::document_processing']]],
+  ['get_5faudits_5ffor_5fname_2',['get_audits_for_name',['../classdatabase_1_1repo_1_1_audit_log_repo.html#a8753dbdd6ed94f3cef1ca77c4520ce0c',1,'database::repo::AuditLogRepo']]],
+  ['get_5faudits_5ffor_5freport_3',['get_audits_for_report',['../classdatabase_1_1repo_1_1_audit_log_repo.html#a5d7947bf8ac083c9e4f94eb850a9d532',1,'database::repo::AuditLogRepo']]],
+  ['get_5fdecisions_5fdata_4',['get_decisions_data',['../namespacefiles_1_1document__processing.html#ac884d714993c53d37f64b6c11661afd6',1,'files::document_processing']]],
+  ['get_5ffile_5fauditlog_5',['get_file_auditlog',['../namespaceaudits_1_1audits.html#a6be77a6ad80a21b307031be08d639229',1,'audits::audits']]],
+  ['get_5ffiles_6',['get_files',['../namespacefiles_1_1files.html#a0b81f5034b14959b9f46c91160bd94c4',1,'files::files']]],
+  ['get_5ffirst_5fword_7',['get_first_word',['../namespacefiles_1_1document__processing.html#a1e0404725e83823f544f91baa42ab7f3',1,'files::document_processing']]],
+  ['get_5fmeasures_5fdata_8',['get_measures_data',['../namespacefiles_1_1document__processing.html#a41f14e049b62e1e40c1772b67bbfa9c2',1,'files::document_processing']]],
+  ['get_5fmethods_5fdata_9',['get_methods_data',['../namespacefiles_1_1document__processing.html#a4c4d152b0b262e1a44efe80c1d513d44',1,'files::document_processing']]],
+  ['get_5fname_5fauditlog_10',['get_name_auditlog',['../namespaceaudits_1_1audits.html#ac25b77c5b5df53921d2e19f9d12eaf1d',1,'audits::audits']]],
+  ['get_5freport_5fby_5fid_11',['get_report_by_id',['../classdatabase_1_1repo_1_1_report_repo.html#aeb54b9c05d19c7361ba419f643ca4f4e',1,'database::repo::ReportRepo']]],
+  ['get_5freport_5finfo_12',['get_report_info',['../namespacefiles_1_1document__processing.html#aea09e604976f6f9db04010d255275891',1,'files::document_processing']]],
+  ['get_5fslo_5fdata_13',['get_slo_data',['../namespacefiles_1_1document__processing.html#a10b5953e14fe137a879a1b57b6d136e0',1,'files::document_processing']]],
+  ['get_5fslo_5fnum_14',['get_slo_num',['../namespacefiles_1_1document__processing.html#a75d9c98332bbba410fc8f86d2ce3da5a',1,'files::document_processing']]],
+  ['get_5fstatistics_15',['get_statistics',['../namespacestatistics_1_1statistics.html#a5179d07b28feda1eaf374ac0e93a2327',1,'statistics::statistics']]],
+  ['get_5ftable_5fcells_16',['get_table_cells',['../namespacefiles_1_1document__processing.html#ab8fac1724c826423a4966ee793bae706',1,'files::document_processing']]],
+  ['get_5ftoken_5fauth_5fheader_17',['get_token_auth_header',['../namespaceauth.html#a37811031b2645dd883bfc5b6fb3f4507',1,'auth']]],
+  ['get_5fuser_5finfo_18',['get_user_info',['../classdatabase_1_1repo_1_1_auth0_web_api.html#ad4d6cb84b168f17b883f23cf2bd85862',1,'database::repo::Auth0WebApi']]],
+  ['get_5fuser_5fname_19',['get_user_name',['../classdatabase_1_1repo_1_1_auth0_web_api.html#af67c8b103ac7c7c50e63588001942221',1,'database::repo::Auth0WebApi']]],
+  ['get_5fuser_5froles_20',['get_user_roles',['../classdatabase_1_1repo_1_1_auth0_web_api.html#a5e4ede7b671a681f42e4653efaabe7d4',1,'database::repo::Auth0WebApi']]],
+  ['get_5fusers_21',['get_users',['../classdatabase_1_1repo_1_1_auth0_web_api.html#a4be7309fd9df1f5eb0ec838864661e7a',1,'database::repo::Auth0WebApi']]],
+  ['get_5fword_5fat_22',['get_word_at',['../namespacefiles_1_1document__processing.html#af56992dbff5342c15020342fb6d3a3af',1,'files::document_processing']]]
 ];

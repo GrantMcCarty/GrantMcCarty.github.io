@@ -1,0 +1,80 @@
+\hypertarget{namespaceaudits_1_1audits}{}\doxysection{audits.\+audits Namespace Reference}
+\label{namespaceaudits_1_1audits}\index{audits.audits@{audits.audits}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceaudits_1_1audits_a6be77a6ad80a21b307031be08d639229}{get\+\_\+file\+\_\+auditlog}} (file\+\_\+id)
+\item 
+def \mbox{\hyperlink{namespaceaudits_1_1audits_ac25b77c5b5df53921d2e19f9d12eaf1d}{get\+\_\+name\+\_\+auditlog}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceaudits_1_1audits_a5b60eb2cfea7308bd82248d9c113fd95}{audit\+\_\+bp}} = Blueprint(\char`\"{}audit\+\_\+bp\char`\"{}, \+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceaudits_1_1audits_a6be77a6ad80a21b307031be08d639229}\label{namespaceaudits_1_1audits_a6be77a6ad80a21b307031be08d639229}} 
+\index{audits.audits@{audits.audits}!get\_file\_auditlog@{get\_file\_auditlog}}
+\index{get\_file\_auditlog@{get\_file\_auditlog}!audits.audits@{audits.audits}}
+\doxysubsubsection{\texorpdfstring{get\_file\_auditlog()}{get\_file\_auditlog()}}
+{\footnotesize\ttfamily def audits.\+audits.\+get\+\_\+file\+\_\+auditlog (\begin{DoxyParamCaption}\item[{}]{file\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Endpoint: /audit/file/<file_id>
+Method: GET
+Description: Gets all the audit log entries for a file.
+
+URL Parameters:
+file_id: The id of the file to get the audit log for.
+
+Response format:
+{
+  "status": "success/(no results/error)",
+  "report_id": "id of the report",
+  "audit_trail": [{
+    "action": "action performed",
+    "timestamp": "time of action",
+    "editor_name": "name of editor",
+    "audit_id": "id of audit log entry",
+    "report_id": "id of report"
+  },{}...]
+}
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaudits_1_1audits_ac25b77c5b5df53921d2e19f9d12eaf1d}\label{namespaceaudits_1_1audits_ac25b77c5b5df53921d2e19f9d12eaf1d}} 
+\index{audits.audits@{audits.audits}!get\_name\_auditlog@{get\_name\_auditlog}}
+\index{get\_name\_auditlog@{get\_name\_auditlog}!audits.audits@{audits.audits}}
+\doxysubsubsection{\texorpdfstring{get\_name\_auditlog()}{get\_name\_auditlog()}}
+{\footnotesize\ttfamily def audits.\+audits.\+get\+\_\+name\+\_\+auditlog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Endpoint: /audit/user
+Method: POST
+Description: Gets all the audit log entries for a particular name/user.
+
+Request format:
+{
+  "name": "name of user"
+}
+
+Response format:
+{
+  "status": "success/(no results/error)",
+  "report_id": "id of the report",
+  "audit_trail": [{
+    "action": "action performed",
+    "timestamp": "time of action",
+    "editor_name": "name of editor",
+    "audit_id": "id of audit log entry",
+    "report_id": "id of report"
+  },{}...]
+}
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceaudits_1_1audits_a5b60eb2cfea7308bd82248d9c113fd95}\label{namespaceaudits_1_1audits_a5b60eb2cfea7308bd82248d9c113fd95}} 
+\index{audits.audits@{audits.audits}!audit\_bp@{audit\_bp}}
+\index{audit\_bp@{audit\_bp}!audits.audits@{audits.audits}}
+\doxysubsubsection{\texorpdfstring{audit\_bp}{audit\_bp}}
+{\footnotesize\ttfamily audits.\+audits.\+audit\+\_\+bp = Blueprint(\char`\"{}audit\+\_\+bp\char`\"{}, \+\_\+\+\_\+name\+\_\+\+\_\+)}
+

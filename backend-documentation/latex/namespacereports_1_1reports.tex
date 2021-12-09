@@ -3,7 +3,17 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{namespacereports_1_1reports_ae2e40a80996766e506dce4739ff162d1}{trigger\+\_\+process\+\_\+files}} ()
+def \mbox{\hyperlink{namespacereports_1_1reports_aded85e448286ff037749f2530e2b041f}{extract\+\_\+data}} ()
+\item 
+def \mbox{\hyperlink{namespacereports_1_1reports_a69be5d3109c36bae0375c41c01b0046d}{retrieve\+\_\+data}} (obj, type)
+\item 
+int \mbox{\hyperlink{namespacereports_1_1reports_ae745e42d248014bfac76b137eae5ce9a}{send\+\_\+to\+\_\+db}} (any obj, str report\+Type)
+\item 
+def \mbox{\hyperlink{namespacereports_1_1reports_a97a7ab5f90ad4768e9a6282c671e62a3}{handle\+\_\+report}} (id)
+\item 
+def \mbox{\hyperlink{namespacereports_1_1reports_ac04abdd2b8d85812d24b9dd5e9e69965}{search\+\_\+reports}} ()
+\item 
+def \mbox{\hyperlink{namespacereports_1_1reports_af33c7c372da95651f967a737df8d7502}{handle\+\_\+manage}} (id)
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -13,11 +23,144 @@ def \mbox{\hyperlink{namespacereports_1_1reports_ae2e40a80996766e506dce4739ff162
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespacereports_1_1reports_ae2e40a80996766e506dce4739ff162d1}\label{namespacereports_1_1reports_ae2e40a80996766e506dce4739ff162d1}} 
-\index{reports.reports@{reports.reports}!trigger\_process\_files@{trigger\_process\_files}}
-\index{trigger\_process\_files@{trigger\_process\_files}!reports.reports@{reports.reports}}
-\doxysubsubsection{\texorpdfstring{trigger\_process\_files()}{trigger\_process\_files()}}
-{\footnotesize\ttfamily def reports.\+reports.\+trigger\+\_\+process\+\_\+files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespacereports_1_1reports_aded85e448286ff037749f2530e2b041f}\label{namespacereports_1_1reports_aded85e448286ff037749f2530e2b041f}} 
+\index{reports.reports@{reports.reports}!extract\_data@{extract\_data}}
+\index{extract\_data@{extract\_data}!reports.reports@{reports.reports}}
+\doxysubsubsection{\texorpdfstring{extract\_data()}{extract\_data()}}
+{\footnotesize\ttfamily def reports.\+reports.\+extract\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacereports_1_1reports_af33c7c372da95651f967a737df8d7502}\label{namespacereports_1_1reports_af33c7c372da95651f967a737df8d7502}} 
+\index{reports.reports@{reports.reports}!handle\_manage@{handle\_manage}}
+\index{handle\_manage@{handle\_manage}!reports.reports@{reports.reports}}
+\doxysubsubsection{\texorpdfstring{handle\_manage()}{handle\_manage()}}
+{\footnotesize\ttfamily def reports.\+reports.\+handle\+\_\+manage (\begin{DoxyParamCaption}\item[{}]{id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Endpoint: /reports/manage/<id>
+Method: POST
+Description: Use this endpoint to remove SLOs or children of SLOs from a 
+report. Must either be the owner or an admin to successfuly remove something.
+
+Request format:
+{
+  "remove_slos": [
+    slo_id1, ...
+  ],
+  "remove_measure": [
+    measure_id1, ...
+  ],
+  "remove_decision_action": [
+    decision_action_id1, ...
+  ],
+  "remove_collection_analysis": [
+    collection_analysis_id1, ...
+  ],
+  "remove_method": [
+    method_id1, ...
+  ],
+  "remove_accredited_data_analysis": [
+    accredited_data_analysis_id1, ...
+  ]
+}
+
+Response format:
+{
+  "status": "success",
+  "message": "removed"
+}
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacereports_1_1reports_a97a7ab5f90ad4768e9a6282c671e62a3}\label{namespacereports_1_1reports_a97a7ab5f90ad4768e9a6282c671e62a3}} 
+\index{reports.reports@{reports.reports}!handle\_report@{handle\_report}}
+\index{handle\_report@{handle\_report}!reports.reports@{reports.reports}}
+\doxysubsubsection{\texorpdfstring{handle\_report()}{handle\_report()}}
+{\footnotesize\ttfamily def reports.\+reports.\+handle\+\_\+report (\begin{DoxyParamCaption}\item[{}]{id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Endpoint: /reports/<id>
+Method: GET, POST, DELETE
+
+GET Description: Given a report id, returns a report and all of its children
+as a dictionary.
+
+POST Description: Given a report id and a report in the same format as the GET endpoint,
+updates the report in the database. To add new non-slos, just make a dict
+with the desired attributes and send it as if it were being updated. MUST INCLUDE THE
+SLO ID IT SHOULD BE ASSOCIATED WITH. ALSO INCLUDE THE ATTRIBUTE "new": true TO TELL 
+THE DATABASE TO INSERT RATHER THAN UPDATE
+
+New SLOs can be created by adding SLOs to the report-level attribute
+'new_slos'. the new SLOs should have the same format as above and can also include new
+methods, decisions, measures, etc. The new SLOs will be added to the database and the
+children will also be added. 
+
+Example of adding new accredited_data_analysis:
+```
+  ...
+    "slos": [
+      {
+        "id": 24,
+          "accredited_data_analyses": [{
+              "slo_id": 24,
+              "status": "test12345",
+              "new": true
+          }],
+        ...
+```
+
+Example of adding new SLO:
+```
+...
+"id": 6,
+"new_slos": [
+   {
+          "accredited_data_analyses": [...],
+          "bloom": "Analysis",
+          "collection_analyses": [...],
+          "common_graduate_program_slo": "",
+          "decision_actions": [...],
+          "description": "Demonstrates the ability to analyze and interpret texts in a senior paper or project",
+          "id": 24,
+          "measures": [...],
+          "methods": [...],
+          "report_id": 6
+    }
+  ]
+  ...
+```
+
+DELETE Description: Given a report id, sets the report as deleted in the database. This does not
+actually remove the report from the database for audit log reasons, so the report just has
+its 'valid' bit set to false and it is no longer returned in endpoints.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacereports_1_1reports_a69be5d3109c36bae0375c41c01b0046d}\label{namespacereports_1_1reports_a69be5d3109c36bae0375c41c01b0046d}} 
+\index{reports.reports@{reports.reports}!retrieve\_data@{retrieve\_data}}
+\index{retrieve\_data@{retrieve\_data}!reports.reports@{reports.reports}}
+\doxysubsubsection{\texorpdfstring{retrieve\_data()}{retrieve\_data()}}
+{\footnotesize\ttfamily def reports.\+reports.\+retrieve\+\_\+data (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacereports_1_1reports_ac04abdd2b8d85812d24b9dd5e9e69965}\label{namespacereports_1_1reports_ac04abdd2b8d85812d24b9dd5e9e69965}} 
+\index{reports.reports@{reports.reports}!search\_reports@{search\_reports}}
+\index{search\_reports@{search\_reports}!reports.reports@{reports.reports}}
+\doxysubsubsection{\texorpdfstring{search\_reports()}{search\_reports()}}
+{\footnotesize\ttfamily def reports.\+reports.\+search\+\_\+reports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Endpoint: /reports/search
+Method: POST
+Description: Searches select fields of reports. Returns
+three lists of results.
+
+Request format:
+{ "search_key": "value" }
+
+Response format:
+{
+  "done": [{report1...}, {report2...}, ...],
+  "review": [{report1...}, {report2...}, ...],
+  "uploaded": [{report1...}, {report2...}, ...]
+}
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacereports_1_1reports_ae745e42d248014bfac76b137eae5ce9a}\label{namespacereports_1_1reports_ae745e42d248014bfac76b137eae5ce9a}} 
+\index{reports.reports@{reports.reports}!send\_to\_db@{send\_to\_db}}
+\index{send\_to\_db@{send\_to\_db}!reports.reports@{reports.reports}}
+\doxysubsubsection{\texorpdfstring{send\_to\_db()}{send\_to\_db()}}
+{\footnotesize\ttfamily  int reports.\+reports.\+send\+\_\+to\+\_\+db (\begin{DoxyParamCaption}\item[{any}]{obj,  }\item[{str}]{report\+Type }\end{DoxyParamCaption})}
 
 
 

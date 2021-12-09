@@ -1,0 +1,51 @@
+\hypertarget{namespaceauth}{}\doxysection{auth Namespace Reference}
+\label{namespaceauth}\index{auth@{auth}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classauth_1_1_auth_error}{Auth\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceauth_a37811031b2645dd883bfc5b6fb3f4507}{get\+\_\+token\+\_\+auth\+\_\+header}} ()
+\item 
+def \mbox{\hyperlink{namespaceauth_a42f6fe067c60286cd0fb7b023dc1b62f}{requires\+\_\+auth}} (f)
+\item 
+def \mbox{\hyperlink{namespaceauth_a030b84d23093b231b24d9ce09e7e1d64}{requires\+\_\+scope}} (required\+\_\+scope)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Python Flask API Auth0 integration 
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceauth_a37811031b2645dd883bfc5b6fb3f4507}\label{namespaceauth_a37811031b2645dd883bfc5b6fb3f4507}} 
+\index{auth@{auth}!get\_token\_auth\_header@{get\_token\_auth\_header}}
+\index{get\_token\_auth\_header@{get\_token\_auth\_header}!auth@{auth}}
+\doxysubsubsection{\texorpdfstring{get\_token\_auth\_header()}{get\_token\_auth\_header()}}
+{\footnotesize\ttfamily def auth.\+get\+\_\+token\+\_\+auth\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Obtains the Access Token from the Authorization Header
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceauth_a42f6fe067c60286cd0fb7b023dc1b62f}\label{namespaceauth_a42f6fe067c60286cd0fb7b023dc1b62f}} 
+\index{auth@{auth}!requires\_auth@{requires\_auth}}
+\index{requires\_auth@{requires\_auth}!auth@{auth}}
+\doxysubsubsection{\texorpdfstring{requires\_auth()}{requires\_auth()}}
+{\footnotesize\ttfamily def auth.\+requires\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{f }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determines if the Access Token is valid
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceauth_a030b84d23093b231b24d9ce09e7e1d64}\label{namespaceauth_a030b84d23093b231b24d9ce09e7e1d64}} 
+\index{auth@{auth}!requires\_scope@{requires\_scope}}
+\index{requires\_scope@{requires\_scope}!auth@{auth}}
+\doxysubsubsection{\texorpdfstring{requires\_scope()}{requires\_scope()}}
+{\footnotesize\ttfamily def auth.\+requires\+\_\+scope (\begin{DoxyParamCaption}\item[{}]{required\+\_\+scope }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determines if the required scope is present in the Access Token
+Args:
+    required_scope (str): The scope required to access the resource
+\end{DoxyVerb}
+ 

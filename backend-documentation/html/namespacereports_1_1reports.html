@@ -75,8 +75,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae2e40a80996766e506dce4739ff162d1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereports_1_1reports.html#ae2e40a80996766e506dce4739ff162d1">trigger_process_files</a> ()</td></tr>
-<tr class="separator:ae2e40a80996766e506dce4739ff162d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded85e448286ff037749f2530e2b041f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereports_1_1reports.html#aded85e448286ff037749f2530e2b041f">extract_data</a> ()</td></tr>
+<tr class="separator:aded85e448286ff037749f2530e2b041f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69be5d3109c36bae0375c41c01b0046d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereports_1_1reports.html#a69be5d3109c36bae0375c41c01b0046d">retrieve_data</a> (obj, type)</td></tr>
+<tr class="separator:a69be5d3109c36bae0375c41c01b0046d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae745e42d248014bfac76b137eae5ce9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereports_1_1reports.html#ae745e42d248014bfac76b137eae5ce9a">send_to_db</a> (any obj, str reportType)</td></tr>
+<tr class="separator:ae745e42d248014bfac76b137eae5ce9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a7ab5f90ad4768e9a6282c671e62a3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereports_1_1reports.html#a97a7ab5f90ad4768e9a6282c671e62a3">handle_report</a> (id)</td></tr>
+<tr class="separator:a97a7ab5f90ad4768e9a6282c671e62a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04abdd2b8d85812d24b9dd5e9e69965"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereports_1_1reports.html#ac04abdd2b8d85812d24b9dd5e9e69965">search_reports</a> ()</td></tr>
+<tr class="separator:ac04abdd2b8d85812d24b9dd5e9e69965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33c7c372da95651f967a737df8d7502"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereports_1_1reports.html#af33c7c372da95651f967a737df8d7502">handle_manage</a> (id)</td></tr>
+<tr class="separator:af33c7c372da95651f967a737df8d7502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -84,17 +94,226 @@ Variables</h2></td></tr>
 <tr class="separator:aff043785c10ea9969257914f9bc9ae63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae2e40a80996766e506dce4739ff162d1" name="ae2e40a80996766e506dce4739ff162d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2e40a80996766e506dce4739ff162d1">&#9670;&nbsp;</a></span>trigger_process_files()</h2>
+<a id="aded85e448286ff037749f2530e2b041f" name="aded85e448286ff037749f2530e2b041f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded85e448286ff037749f2530e2b041f">&#9670;&nbsp;</a></span>extract_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def reports.reports.trigger_process_files </td>
+          <td class="memname">def reports.reports.extract_data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af33c7c372da95651f967a737df8d7502" name="af33c7c372da95651f967a737df8d7502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33c7c372da95651f967a737df8d7502">&#9670;&nbsp;</a></span>handle_manage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def reports.reports.handle_manage </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Endpoint: /reports/manage/&lt;id&gt;
+Method: POST
+Description: Use this endpoint to remove SLOs or children of SLOs from a 
+report. Must either be the owner or an admin to successfuly remove something.
+
+Request format:
+{
+  "remove_slos": [
+    slo_id1, ...
+  ],
+  "remove_measure": [
+    measure_id1, ...
+  ],
+  "remove_decision_action": [
+    decision_action_id1, ...
+  ],
+  "remove_collection_analysis": [
+    collection_analysis_id1, ...
+  ],
+  "remove_method": [
+    method_id1, ...
+  ],
+  "remove_accredited_data_analysis": [
+    accredited_data_analysis_id1, ...
+  ]
+}
+
+Response format:
+{
+  "status": "success",
+  "message": "removed"
+}
+</pre> 
+</div>
+</div>
+<a id="a97a7ab5f90ad4768e9a6282c671e62a3" name="a97a7ab5f90ad4768e9a6282c671e62a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a7ab5f90ad4768e9a6282c671e62a3">&#9670;&nbsp;</a></span>handle_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def reports.reports.handle_report </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Endpoint: /reports/&lt;id&gt;
+Method: GET, POST, DELETE
+
+GET Description: Given a report id, returns a report and all of its children
+as a dictionary.
+
+POST Description: Given a report id and a report in the same format as the GET endpoint,
+updates the report in the database. To add new non-slos, just make a dict
+with the desired attributes and send it as if it were being updated. MUST INCLUDE THE
+SLO ID IT SHOULD BE ASSOCIATED WITH. ALSO INCLUDE THE ATTRIBUTE "new": true TO TELL 
+THE DATABASE TO INSERT RATHER THAN UPDATE
+
+New SLOs can be created by adding SLOs to the report-level attribute
+'new_slos'. the new SLOs should have the same format as above and can also include new
+methods, decisions, measures, etc. The new SLOs will be added to the database and the
+children will also be added. 
+
+Example of adding new accredited_data_analysis:
+```
+  ...
+    "slos": [
+      {
+        "id": 24,
+          "accredited_data_analyses": [{
+              "slo_id": 24,
+              "status": "test12345",
+              "new": true
+          }],
+        ...
+```
+
+Example of adding new SLO:
+```
+...
+"id": 6,
+"new_slos": [
+   {
+          "accredited_data_analyses": [...],
+          "bloom": "Analysis",
+          "collection_analyses": [...],
+          "common_graduate_program_slo": "",
+          "decision_actions": [...],
+          "description": "Demonstrates the ability to analyze and interpret texts in a senior paper or project",
+          "id": 24,
+          "measures": [...],
+          "methods": [...],
+          "report_id": 6
+    }
+  ]
+  ...
+```
+
+DELETE Description: Given a report id, sets the report as deleted in the database. This does not
+actually remove the report from the database for audit log reasons, so the report just has
+its 'valid' bit set to false and it is no longer returned in endpoints.</pre> 
+</div>
+</div>
+<a id="a69be5d3109c36bae0375c41c01b0046d" name="a69be5d3109c36bae0375c41c01b0046d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69be5d3109c36bae0375c41c01b0046d">&#9670;&nbsp;</a></span>retrieve_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def reports.reports.retrieve_data </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac04abdd2b8d85812d24b9dd5e9e69965" name="ac04abdd2b8d85812d24b9dd5e9e69965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac04abdd2b8d85812d24b9dd5e9e69965">&#9670;&nbsp;</a></span>search_reports()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def reports.reports.search_reports </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Endpoint: /reports/search
+Method: POST
+Description: Searches select fields of reports. Returns
+three lists of results.
+
+Request format:
+{ "search_key": "value" }
+
+Response format:
+{
+  "done": [{report1...}, {report2...}, ...],
+  "review": [{report1...}, {report2...}, ...],
+  "uploaded": [{report1...}, {report2...}, ...]
+}
+</pre> 
+</div>
+</div>
+<a id="ae745e42d248014bfac76b137eae5ce9a" name="ae745e42d248014bfac76b137eae5ce9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae745e42d248014bfac76b137eae5ce9a">&#9670;&nbsp;</a></span>send_to_db()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int reports.reports.send_to_db </td>
+          <td>(</td>
+          <td class="paramtype">any&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>reportType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -70,6 +70,12 @@
 
 
 
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
 
 
 <section>
@@ -128,7 +134,14 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#showSidenav" >showSidenav</a>
+                                <a href="#currentSelection" >currentSelection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#login" >login</a>
+                            </li>
+                            <li>
+                                <a href="#showAdmin" >showAdmin</a>
                             </li>
                             <li>
                                 <a href="#title" >title</a>
@@ -146,7 +159,19 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#toggleSidenav" >toggleSidenav</a>
+                                <a href="#getUser" >getUser</a>
+                            </li>
+                            <li>
+                                <a href="#logoutUser" >logoutUser</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#selectNav" >selectNav</a>
                             </li>
                         </ul>
                     </td>
@@ -160,6 +185,66 @@
     </table>
 </section>
 
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(login: <a href="../guards/LoginService.html" target="_self">LoginService</a>, service: <a href="../injectables/FileServiceService.html" target="_self">FileServiceService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>login</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../guards/LoginService.html" target="_self" >LoginService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FileServiceService.html" target="_self" >FileServiceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
 
 
 
@@ -174,24 +259,61 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="toggleSidenav"></a>
+                    <a name="getUser"></a>
                     <span class="name">
-                        <span ><b>toggleSidenav</b></span>
-                        <a href="#toggleSidenav"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>getUser</b></span>
+                        <a href="#getUser"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>toggleSidenav()</code>
+<code>getUser()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="11"
-                            class="link-to-prism">src/app/app.component.ts:11</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/app.component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logoutUser"></a>
+                    <span class="name">
+                        <span ><b>logoutUser</b></span>
+                        <a href="#logoutUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logoutUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/app.component.ts:31</a></div>
                 </td>
             </tr>
 
@@ -207,6 +329,148 @@
             </tr>
         </tbody>
     </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/app.component.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">src/app/app.component.ts:17</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectNav"></a>
+                    <span class="name">
+                        <span ><b>selectNav</b></span>
+                        <a href="#selectNav"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectNav(nav: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/app.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nav</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
     <section>
     
@@ -217,10 +481,68 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="showSidenav"></a>
+                    <a name="currentSelection"></a>
                     <span class="name">
-                        <span ><b>showSidenav</b></span>
-                        <a href="#showSidenav"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>currentSelection</b></span>
+                        <a href="#currentSelection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;home&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/app.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="login"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>login</b></span>
+                        <a href="#login"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../guards/LoginService.html" target="_self" >LoginService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/app.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showAdmin"></a>
+                    <span class="name">
+                        <span ><b>showAdmin</b></span>
+                        <a href="#showAdmin"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -231,7 +553,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/app.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -262,7 +584,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/app.component.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/app.component.ts:11</a></div>
                         </td>
                     </tr>
 
@@ -275,51 +597,89 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy } from &#x27;@angular/core&#x27;;
+import { FileServiceService } from &#x27;./shared/services/file-service.service&#x27;;
+import { LoginService } from &#x27;./shared/services/login.service&#x27;;
 
 @Component({
   selector: &#x27;app-root&#x27;,
   templateUrl: &#x27;./app.component.html&#x27;,
   styleUrls: [&#x27;./app.component.css&#x27;]
 })
-export class AppComponent {
+export class AppComponent implements OnDestroy {
   title &#x3D; &#x27;scorpions-import-frontend&#x27;;
-  showSidenav &#x3D; false;
-  toggleSidenav() {
-    this.showSidenav &#x3D; !this.showSidenav;
-    let classList &#x3D; document.getElementById(&quot;router&quot;)?.classList
-    let sideClassList &#x3D; document.getElementById(&quot;side&quot;)?.classList
-    if(!classList || !sideClassList) return
+  currentSelection &#x3D; &#x27;home&#x27;;
+  showAdmin &#x3D; false;
+  
+  constructor(public login: LoginService, private service: FileServiceService) { }
 
-    if(this.showSidenav) {
-      classList.add(&quot;active&quot;);
-      sideClassList.add(&quot;active&quot;);
-    } else {
-      classList.remove(&quot;active&quot;);
-      sideClassList.remove(&quot;active&quot;);
+  ngOnInit() {
+    //TODO dont show admin link if user is not admin
+    // this.service.getUserRoles(this.getUser()).subscribe((data:any) &#x3D;&gt; {
+    //   console.log(data)
+    //   pseudo code - also put *ngIf&#x3D;&quot;showAdmin&quot; in the html
+    //   this.showAdmin &#x3D; adminRole in data.user_roles;
+    // });
+    this.selectNav(this.currentSelection);
+  }
+
+  ngOnDestroy() {
+    this.login.logout();
+  }
+
+  logoutUser() {
+    this.login.logout();
+  }
+
+  getUser() :string {
+    return this.login.getUsername();
+  }
+
+  selectNav(nav:string) {
+    if(this.currentSelection &amp;&amp; this.currentSelection !&#x3D; nav) {
+      var previous &#x3D; document.getElementById(this.currentSelection);
+      previous?.classList.remove(&quot;selected&quot;);
     }
+    var target &#x3D; document.getElementById(nav);
+    target?.classList.add(&quot;selected&quot;);
+    this.currentSelection &#x3D; nav; 
   }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;header&quot;&gt;
-    &lt;mat-icon (click)&#x3D;&quot;toggleSidenav()&quot;
-        style&#x3D;&quot;font-size: 30px; color: #FFF; position:absolute; left:10px; top:28px; cursor: pointer;&quot;&gt;menu&lt;/mat-icon&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;main-header&quot;&gt;
+    &lt;div class&#x3D;&quot;logo&quot;&gt;
+        &lt;a href&#x3D;&quot;https://www.unomaha.edu&quot; target&#x3D;&quot;_blank&quot;&gt;
+            &lt;img alt&#x3D;&quot;University of Nebraska Omaha&quot; src&#x3D;&quot;https://campuscontent.nebraska.edu/UNO/dashboard/IMG/logo-subsite-o-2.png&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
     &lt;h2 class&#x3D;&quot;title&quot;&gt;Academic Assessment Import&lt;/h2&gt;
+    &lt;div class&#x3D;&quot;user&quot; *ngIf&#x3D;&quot;login.isUserAuthenticated() | async&quot;&gt;
+        Welcome {{getUser()}}
+    &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id&#x3D;&quot;router&quot; style&#x3D;&quot;transition: 0.5s;&quot;&gt;
+  
+&lt;div class&#x3D;&quot;sidenav&quot;&gt;
+    &lt;div style&#x3D;&quot;margin-top: 10px;&quot;&gt;
+        &lt;a routerLink&#x3D;&quot;/dashboard&quot; class&#x3D;&quot;navLink&quot; (click)&#x3D;&quot;selectNav(&#x27;home&#x27;)&quot;&gt;
+            &lt;span id&#x3D;&quot;home&quot; class&#x3D;&quot;navbox&quot;&gt;Dashboard&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a routerLink&#x3D;&quot;/import&quot; class&#x3D;&quot;navLink&quot; (click)&#x3D;&quot;selectNav(&#x27;import&#x27;)&quot;&gt;
+            &lt;span id&#x3D;&quot;import&quot; class&#x3D;&quot;navbox&quot;&gt;Import&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a routerLink&#x3D;&quot;/admin&quot; class&#x3D;&quot;navLink&quot; (click)&#x3D;&quot;selectNav(&#x27;admin&#x27;)&quot;&gt;
+            &lt;span id&#x3D;&quot;admin&quot; class&#x3D;&quot;navbox&quot;&gt;Admin&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a class&#x3D;&quot;navLink&quot; (click)&#x3D;&quot;logoutUser()&quot;&gt;
+            &lt;span class&#x3D;&quot;navbox&quot;&gt;Sign Out&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id&#x3D;&quot;router&quot; style&#x3D;&quot;margin-left: 80px; margin-top:60px; overflow-x: auto;&quot;&gt;
     &lt;router-outlet&gt;&lt;/router-outlet&gt;
-&lt;/div&gt;
-&lt;div id&#x3D;&quot;side&quot; class&#x3D;&quot;sidenav&quot;&gt;
-    &lt;a routerLink&#x3D;&quot;/dashboard&quot; (click)&#x3D;&quot;toggleSidenav()&quot;&gt;
-        &lt;span class&#x3D;&quot;navbox&quot;&gt;Dashboard&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;br/&gt;
-    &lt;a routerLink&#x3D;&quot;/import&quot; (click)&#x3D;&quot;toggleSidenav()&quot;&gt;
-        &lt;span class&#x3D;&quot;navbox&quot;&gt;Import&lt;/span&gt;
-    &lt;/a&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -327,49 +687,75 @@ export class AppComponent {
                 <p class="comment">
                     <code>./app.component.css</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">.header {
-    background-color: #000;
-    width: 100vw;
-    height: 90px; 
-    margin-top: -20px;
-    text-align: center;
+                <pre class="line-numbers"><code class="language-scss">.main-header {
+    display: block;
+    background-color: #0e0e0e;
+    border-bottom: 3px solid #d71920;
+    top: 0;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    z-index: 6;
+}
+.logo {
+    display: inline-block;
+    margin-left: 20px;
+}
+.logo img {
+    width:42px;
 }
 .title {
-    color:#FFF;
-    padding-top: 30px;
+    position: fixed;
+    color: #fff;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 .sidenav {
-    top: 89px;
-    left: -170px;
-    position: absolute;
-    width: 150px;
-    background-color: rgb(225, 75, 75);
-    transition: 0.5s;
-    min-height: 600px;
-    height:calc(100% - 110px);
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.active {
-    transition: 0.5s;
-    transform: translateX(120px);
+    z-index: 5;
+    top: 60px;
+    left: 0px;
+    position: fixed;
+    width: 140px;
+    background-color: #484848;
+    height:100%;
+    padding-bottom: 100px;
 }
 .navbox {
-    display: inline-block;
-    width: 100px;
+    display: flex;
+    left: 0px;
+    width: 120px;
     text-align: center;
-    border: 2px solid #000;
-    background-color: #FFF;
+    border-bottom: 0.1px solid #000;
+    vertical-align: middle;
+    color:#FFF;
+    font-size: 14px;
+    padding: 10px;
 }
 .navbox:hover {
-    background-color: #000;
-    color: #FFF;
+    text-decoration: underline;
+    cursor: pointer;
 }
-a {
-    margin-left: 48px;
+.navLink {
     text-decoration: none;
+    text-align: center;
     color: #000;
+}
+.selected {
+    background-color: #000;
+}
+.user {
+    position: absolute;
+    top:20px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 0.8em;
 }</code></pre>
     </div>
 
@@ -398,8 +784,8 @@ a {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="header">    <mat-icon (click)="toggleSidenav()"        style="font-size: 30px; color: #FFF; position:absolute; left:10px; top:28px; cursor: pointer;">menu</mat-icon>    <h2 class="title">Academic Assessment Import</h2></div><div id="router" style="transition: 0.5s;">    <router-outlet></router-outlet></div><div id="side" class="sidenav">    <a routerLink="/dashboard" (click)="toggleSidenav()">        <span class="navbox">Dashboard</span>    </a>    <br/>    <a routerLink="/import" (click)="toggleSidenav()">        <span class="navbox">Import</span>    </a></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ImportComponent', 'selector': 'app-import'}];
+        var COMPONENT_TEMPLATE = '<div><div class="main-header">    <div class="logo">        <a href="https://www.unomaha.edu" target="_blank">            <img alt="University of Nebraska Omaha" src="https://campuscontent.nebraska.edu/UNO/dashboard/IMG/logo-subsite-o-2.png">        </a>    </div>    <h2 class="title">Academic Assessment Import</h2>    <div class="user" *ngIf="login.isUserAuthenticated() | async">        Welcome {{getUser()}}    </div></div>  <div class="sidenav">    <div style="margin-top: 10px;">        <a routerLink="/dashboard" class="navLink" (click)="selectNav(\'home\')">            <span id="home" class="navbox">Dashboard</span>        </a>        <a routerLink="/import" class="navLink" (click)="selectNav(\'import\')">            <span id="import" class="navbox">Import</span>        </a>        <a routerLink="/admin" class="navLink" (click)="selectNav(\'admin\')">            <span id="admin" class="navbox">Admin</span>        </a>        <a class="navLink" (click)="logoutUser()">            <span class="navbox">Sign Out</span>        </a>    </div></div><div id="router" style="margin-left: 80px; margin-top:60px; overflow-x: auto;">    <router-outlet></router-outlet></div></div>'
+    var COMPONENTS = [{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ImportComponent', 'selector': 'app-import'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ReviewComponent', 'selector': 'app-review'}];
     var DIRECTIVES = [{'name': 'DragdropDirective', 'selector': '[appDragdrop]'}];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

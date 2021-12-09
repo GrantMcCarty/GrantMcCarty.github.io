@@ -3,14 +3,20 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+def \mbox{\hyperlink{namespaceapp_ab15305c97cb744e6959818f153aa6ca0}{handle\+\_\+auth\+\_\+error}} (ex)
+\item 
 def \mbox{\hyperlink{namespaceapp_ad4b5e71bab9f5e0e16dd40bd22a16fa6}{after\+\_\+request}} (response)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em create the database helper and add it to the config \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 string \mbox{\hyperlink{namespaceapp_afff35435bcaba98a126915006b14cae8}{TARGET\+\_\+\+FOLDER}} = \textquotesingle{}./data\textquotesingle{}
 \item 
 \mbox{\hyperlink{namespaceapp_a675b4ea702c13dc4b8c05f985a25b496}{app}} = Flask(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespaceapp_a04ca3b9969e7ba24ec81a54b4133285e}{config}} = json.\+load(config\+\_\+file)
+\item 
+\mbox{\hyperlink{namespaceapp_ae98d6b7380e034138b47fb4848d0de3a}{creds}} = json.\+load(creds\+\_\+file)
 \item 
 \mbox{\hyperlink{namespaceapp_adca7658ff5c9024a5353574d2c01cbd2}{secret\+\_\+key}}
 \end{DoxyCompactItemize}
@@ -25,12 +31,34 @@ string \mbox{\hyperlink{namespaceapp_afff35435bcaba98a126915006b14cae8}{TARGET\+
 
 
 
+create the database helper and add it to the config 
+
+\mbox{\Hypertarget{namespaceapp_ab15305c97cb744e6959818f153aa6ca0}\label{namespaceapp_ab15305c97cb744e6959818f153aa6ca0}} 
+\index{app@{app}!handle\_auth\_error@{handle\_auth\_error}}
+\index{handle\_auth\_error@{handle\_auth\_error}!app@{app}}
+\doxysubsubsection{\texorpdfstring{handle\_auth\_error()}{handle\_auth\_error()}}
+{\footnotesize\ttfamily def app.\+handle\+\_\+auth\+\_\+error (\begin{DoxyParamCaption}\item[{}]{ex }\end{DoxyParamCaption})}
+
+
+
 \doxysubsection{Variable Documentation}
 \mbox{\Hypertarget{namespaceapp_a675b4ea702c13dc4b8c05f985a25b496}\label{namespaceapp_a675b4ea702c13dc4b8c05f985a25b496}} 
 \index{app@{app}!app@{app}}
 \index{app@{app}!app@{app}}
 \doxysubsubsection{\texorpdfstring{app}{app}}
 {\footnotesize\ttfamily app.\+app = Flask(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{namespaceapp_a04ca3b9969e7ba24ec81a54b4133285e}\label{namespaceapp_a04ca3b9969e7ba24ec81a54b4133285e}} 
+\index{app@{app}!config@{config}}
+\index{config@{config}!app@{app}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily app.\+config = json.\+load(config\+\_\+file)}
+
+\mbox{\Hypertarget{namespaceapp_ae98d6b7380e034138b47fb4848d0de3a}\label{namespaceapp_ae98d6b7380e034138b47fb4848d0de3a}} 
+\index{app@{app}!creds@{creds}}
+\index{creds@{creds}!app@{app}}
+\doxysubsubsection{\texorpdfstring{creds}{creds}}
+{\footnotesize\ttfamily app.\+creds = json.\+load(creds\+\_\+file)}
 
 \mbox{\Hypertarget{namespaceapp_adca7658ff5c9024a5353574d2c01cbd2}\label{namespaceapp_adca7658ff5c9024a5353574d2c01cbd2}} 
 \index{app@{app}!secret\_key@{secret\_key}}

@@ -1,0 +1,94 @@
+\hypertarget{classdatabase_1_1repo_1_1_report_repo}{}\doxysection{database.\+repo.\+Report\+Repo Class Reference}
+\label{classdatabase_1_1repo_1_1_report_repo}\index{database.repo.ReportRepo@{database.repo.ReportRepo}}
+Inheritance diagram for database.\+repo.\+Report\+Repo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdatabase_1_1repo_1_1_report_repo}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_report_repo_a4fac100147a57aa7a7ceaa1d312d4407}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver}{AACDatabase\+Driver}} \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_aa646d2d2692d363358c72d72be03fe2d}{driver}})
+\item 
+int \mbox{\hyperlink{classdatabase_1_1repo_1_1_report_repo_ad79e35d922dd32a6e9f1b28745b1bf2b}{insert}} (self, \mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}} doc, Any\+Str type)
+\item 
+bool \mbox{\hyperlink{classdatabase_1_1repo_1_1_report_repo_a4299bf71c4f693cd0b1c4631e97d2b92}{has\+\_\+access\+\_\+to\+\_\+report}} (self, str report\+\_\+id, str user\+\_\+id)
+\item 
+List\mbox{[}\mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}}\mbox{]} \mbox{\hyperlink{classdatabase_1_1repo_1_1_report_repo_a0a4441fb1d12ea17db5d8cf4fae72922}{search\+\_\+reports}} (self, str key, owner=None)
+\item 
+\mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}} \mbox{\hyperlink{classdatabase_1_1repo_1_1_report_repo_aeb54b9c05d19c7361ba419f643ca4f4e}{get\+\_\+report\+\_\+by\+\_\+id}} (self, int id)
+\item 
+None \mbox{\hyperlink{classdatabase_1_1repo_1_1_report_repo_a36745c152db998aabadbc8aac37af4f0}{update}} (self, \mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}} report)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_report_repo_af483b6a0ae1cdab88658c11bf3ff1973}{remove\+\_\+report}} (self, int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_report_repo_a4fac100147a57aa7a7ceaa1d312d4407}\label{classdatabase_1_1repo_1_1_report_repo_a4fac100147a57aa7a7ceaa1d312d4407}} 
+\index{database.repo.ReportRepo@{database.repo.ReportRepo}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!database.repo.ReportRepo@{database.repo.ReportRepo}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def database.\+repo.\+Report\+Repo.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver}{AACDatabase\+Driver}}}]{driver }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_aa6bd66c0b8043961ad9cdfc80eb3c2a0}{database.\+repo.\+Repository}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_report_repo_aeb54b9c05d19c7361ba419f643ca4f4e}\label{classdatabase_1_1repo_1_1_report_repo_aeb54b9c05d19c7361ba419f643ca4f4e}} 
+\index{database.repo.ReportRepo@{database.repo.ReportRepo}!get\_report\_by\_id@{get\_report\_by\_id}}
+\index{get\_report\_by\_id@{get\_report\_by\_id}!database.repo.ReportRepo@{database.repo.ReportRepo}}
+\doxysubsubsection{\texorpdfstring{get\_report\_by\_id()}{get\_report\_by\_id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}} database.\+repo.\+Report\+Repo.\+get\+\_\+report\+\_\+by\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Selects a report from the database by id.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_report_repo_a4299bf71c4f693cd0b1c4631e97d2b92}\label{classdatabase_1_1repo_1_1_report_repo_a4299bf71c4f693cd0b1c4631e97d2b92}} 
+\index{database.repo.ReportRepo@{database.repo.ReportRepo}!has\_access\_to\_report@{has\_access\_to\_report}}
+\index{has\_access\_to\_report@{has\_access\_to\_report}!database.repo.ReportRepo@{database.repo.ReportRepo}}
+\doxysubsubsection{\texorpdfstring{has\_access\_to\_report()}{has\_access\_to\_report()}}
+{\footnotesize\ttfamily  bool database.\+repo.\+Report\+Repo.\+has\+\_\+access\+\_\+to\+\_\+report (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{report\+\_\+id,  }\item[{str}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns true if the user has access to the report.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_report_repo_ad79e35d922dd32a6e9f1b28745b1bf2b}\label{classdatabase_1_1repo_1_1_report_repo_ad79e35d922dd32a6e9f1b28745b1bf2b}} 
+\index{database.repo.ReportRepo@{database.repo.ReportRepo}!insert@{insert}}
+\index{insert@{insert}!database.repo.ReportRepo@{database.repo.ReportRepo}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily  int database.\+repo.\+Report\+Repo.\+insert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}}}]{doc,  }\item[{Any\+Str}]{type }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inserts a document into the database. The type of document is specified by
+the type argument and can either be accredited or non-accredited.
+
+doc is the document to be inserted.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_report_repo_af483b6a0ae1cdab88658c11bf3ff1973}\label{classdatabase_1_1repo_1_1_report_repo_af483b6a0ae1cdab88658c11bf3ff1973}} 
+\index{database.repo.ReportRepo@{database.repo.ReportRepo}!remove\_report@{remove\_report}}
+\index{remove\_report@{remove\_report}!database.repo.ReportRepo@{database.repo.ReportRepo}}
+\doxysubsubsection{\texorpdfstring{remove\_report()}{remove\_report()}}
+{\footnotesize\ttfamily def database.\+repo.\+Report\+Repo.\+remove\+\_\+report (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_report_repo_a0a4441fb1d12ea17db5d8cf4fae72922}\label{classdatabase_1_1repo_1_1_report_repo_a0a4441fb1d12ea17db5d8cf4fae72922}} 
+\index{database.repo.ReportRepo@{database.repo.ReportRepo}!search\_reports@{search\_reports}}
+\index{search\_reports@{search\_reports}!database.repo.ReportRepo@{database.repo.ReportRepo}}
+\doxysubsubsection{\texorpdfstring{search\_reports()}{search\_reports()}}
+{\footnotesize\ttfamily  List\mbox{[}\mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}}\mbox{]} database.\+repo.\+Report\+Repo.\+search\+\_\+reports (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key,  }\item[{}]{owner = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Searches the database for documents that match the specified field and value.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_report_repo_a36745c152db998aabadbc8aac37af4f0}\label{classdatabase_1_1repo_1_1_report_repo_a36745c152db998aabadbc8aac37af4f0}} 
+\index{database.repo.ReportRepo@{database.repo.ReportRepo}!update@{update}}
+\index{update@{update}!database.repo.ReportRepo@{database.repo.ReportRepo}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily  None database.\+repo.\+Report\+Repo.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}}}]{report }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+webapi/database/\mbox{\hyperlink{repo_8py}{repo.\+py}}\end{DoxyCompactItemize}

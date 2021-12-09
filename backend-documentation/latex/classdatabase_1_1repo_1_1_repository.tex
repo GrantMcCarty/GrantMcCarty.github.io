@@ -1,0 +1,125 @@
+\hypertarget{classdatabase_1_1repo_1_1_repository}{}\doxysection{database.\+repo.\+Repository Class Reference}
+\label{classdatabase_1_1repo_1_1_repository}\index{database.repo.Repository@{database.repo.Repository}}
+Inheritance diagram for database.\+repo.\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classdatabase_1_1repo_1_1_repository}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_aa6bd66c0b8043961ad9cdfc80eb3c2a0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver}{AACDatabase\+Driver}} \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_aa646d2d2692d363358c72d72be03fe2d}{driver}}, Any\+Str \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_a84221997c20acc7fba805aa4a9255566}{table}})
+\item 
+List \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_a98209fa62a12808965c73679fdcac22d}{named\+\_\+query}} (self, Any\+Str q, Dict argdict, Callable\mbox{[}\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classmodels_1_1model_1_1_base_model}{Base\+Model}}\mbox{]} model\+\_\+factory)
+\item 
+List \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_ad423de1cff92d935e4b4a17a57ba7d6f}{named\+\_\+exec}} (self, Any\+Str q, Dict argdict, return\+\_\+result=False)
+\item 
+\mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}} \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_ac4a9f7e9172cdc7fab6284f93e84e945}{select\+\_\+by\+\_\+id}} (self, int id)
+\item 
+List\mbox{[}\mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}}\mbox{]} \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_a7521ce85cfc373ff3338260859a21a24}{search}} (self, Any\+Str field, Any\+Str value)
+\item 
+None \mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_ae2ba4e4f7972f7fbf2aabc80f7a9e62b}{delete}} (self, int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_aa646d2d2692d363358c72d72be03fe2d}{driver}}
+\item 
+\mbox{\hyperlink{classdatabase_1_1repo_1_1_repository_a84221997c20acc7fba805aa4a9255566}{table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_repository_aa6bd66c0b8043961ad9cdfc80eb3c2a0}\label{classdatabase_1_1repo_1_1_repository_aa6bd66c0b8043961ad9cdfc80eb3c2a0}} 
+\index{database.repo.Repository@{database.repo.Repository}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!database.repo.Repository@{database.repo.Repository}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def database.\+repo.\+Repository.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classdatabase_1_1driver_1_1_a_a_c_database_driver}{AACDatabase\+Driver}}}]{driver,  }\item[{Any\+Str}]{table }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdatabase_1_1repo_1_1_report_repo_a4fac100147a57aa7a7ceaa1d312d4407}{database.\+repo.\+Report\+Repo}}, \mbox{\hyperlink{classdatabase_1_1repo_1_1_s_l_o_repo_aa597bb970f28dd61a0af286e952d9346}{database.\+repo.\+SLORepo}}, \mbox{\hyperlink{classdatabase_1_1repo_1_1_measure_repo_a1425129982fe8bf9ccb7a024dee8c626}{database.\+repo.\+Measure\+Repo}}, \mbox{\hyperlink{classdatabase_1_1repo_1_1_decisions_actions_repo_a0cb59fe76e1d415c884c52a0bd51fbd2}{database.\+repo.\+Decisions\+Actions\+Repo}}, \mbox{\hyperlink{classdatabase_1_1repo_1_1_collection_analysis_repo_a4344a48a8c808ae1a53fb4dba10c4033}{database.\+repo.\+Collection\+Analysis\+Repo}}, \mbox{\hyperlink{classdatabase_1_1repo_1_1_methods_repo_a998db446398b20ca7c0e2fb71a4df69b}{database.\+repo.\+Methods\+Repo}}, \mbox{\hyperlink{classdatabase_1_1repo_1_1_accredited_data_analysis_repo_ae62d6f424c151d64f8da60d99befa38a}{database.\+repo.\+Accredited\+Data\+Analysis\+Repo}}, and \mbox{\hyperlink{classdatabase_1_1repo_1_1_audit_log_repo_ae105f17d4290618c7fd53a32873b9b60}{database.\+repo.\+Audit\+Log\+Repo}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_repository_ae2ba4e4f7972f7fbf2aabc80f7a9e62b}\label{classdatabase_1_1repo_1_1_repository_ae2ba4e4f7972f7fbf2aabc80f7a9e62b}} 
+\index{database.repo.Repository@{database.repo.Repository}!delete@{delete}}
+\index{delete@{delete}!database.repo.Repository@{database.repo.Repository}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily  None database.\+repo.\+Repository.\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deletes a document from the database by its id.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_repository_ad423de1cff92d935e4b4a17a57ba7d6f}\label{classdatabase_1_1repo_1_1_repository_ad423de1cff92d935e4b4a17a57ba7d6f}} 
+\index{database.repo.Repository@{database.repo.Repository}!named\_exec@{named\_exec}}
+\index{named\_exec@{named\_exec}!database.repo.Repository@{database.repo.Repository}}
+\doxysubsubsection{\texorpdfstring{named\_exec()}{named\_exec()}}
+{\footnotesize\ttfamily  List database.\+repo.\+Repository.\+named\+\_\+exec (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Any\+Str}]{q,  }\item[{Dict}]{argdict,  }\item[{}]{return\+\_\+result = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}q: should be a named query in the form below.
+
+argdict: should be a dictionary of arguments to be passed to the query and 
+must include every named variable in the query.
+
+Example named query: `"INSERT INTO slo (description, bloom) VALUES (%(description)s, %(bloom)s)"`
+
+In this example, the dict should contain the following keys:
+  description: the description of the SLO
+  bloom: the bloom level of the SLO
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_repository_a98209fa62a12808965c73679fdcac22d}\label{classdatabase_1_1repo_1_1_repository_a98209fa62a12808965c73679fdcac22d}} 
+\index{database.repo.Repository@{database.repo.Repository}!named\_query@{named\_query}}
+\index{named\_query@{named\_query}!database.repo.Repository@{database.repo.Repository}}
+\doxysubsubsection{\texorpdfstring{named\_query()}{named\_query()}}
+{\footnotesize\ttfamily  List database.\+repo.\+Repository.\+named\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Any\+Str}]{q,  }\item[{Dict}]{argdict,  }\item[{Callable\mbox{[}\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classmodels_1_1model_1_1_base_model}{Base\+Model}}\mbox{]}}]{model\+\_\+factory }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}q: should be a named query in the form below.
+
+argdict: should be a dictionary of arguments to be passed to the query and 
+must include every named variable in the query.
+
+modelfactory: should be a function that returns a model that is a child
+of BaseModel.
+
+Example named query: `"SELECT * FROM document  WHERE id = %(id)s"`
+
+The id field is a placeholder.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_repository_a7521ce85cfc373ff3338260859a21a24}\label{classdatabase_1_1repo_1_1_repository_a7521ce85cfc373ff3338260859a21a24}} 
+\index{database.repo.Repository@{database.repo.Repository}!search@{search}}
+\index{search@{search}!database.repo.Repository@{database.repo.Repository}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily  List\mbox{[}\mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}}\mbox{]} database.\+repo.\+Repository.\+search (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Any\+Str}]{field,  }\item[{Any\+Str}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Searches the database for documents that match the specified field and value.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classdatabase_1_1repo_1_1_repository_ac4a9f7e9172cdc7fab6284f93e84e945}\label{classdatabase_1_1repo_1_1_repository_ac4a9f7e9172cdc7fab6284f93e84e945}} 
+\index{database.repo.Repository@{database.repo.Repository}!select\_by\_id@{select\_by\_id}}
+\index{select\_by\_id@{select\_by\_id}!database.repo.Repository@{database.repo.Repository}}
+\doxysubsubsection{\texorpdfstring{select\_by\_id()}{select\_by\_id()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classmodels_1_1model_1_1_report}{Report}} database.\+repo.\+Repository.\+select\+\_\+by\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Selects a single document from the database by its id.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_repository_aa646d2d2692d363358c72d72be03fe2d}\label{classdatabase_1_1repo_1_1_repository_aa646d2d2692d363358c72d72be03fe2d}} 
+\index{database.repo.Repository@{database.repo.Repository}!driver@{driver}}
+\index{driver@{driver}!database.repo.Repository@{database.repo.Repository}}
+\doxysubsubsection{\texorpdfstring{driver}{driver}}
+{\footnotesize\ttfamily database.\+repo.\+Repository.\+driver}
+
+\mbox{\Hypertarget{classdatabase_1_1repo_1_1_repository_a84221997c20acc7fba805aa4a9255566}\label{classdatabase_1_1repo_1_1_repository_a84221997c20acc7fba805aa4a9255566}} 
+\index{database.repo.Repository@{database.repo.Repository}!table@{table}}
+\index{table@{table}!database.repo.Repository@{database.repo.Repository}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily database.\+repo.\+Repository.\+table}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+webapi/database/\mbox{\hyperlink{repo_8py}{repo.\+py}}\end{DoxyCompactItemize}
